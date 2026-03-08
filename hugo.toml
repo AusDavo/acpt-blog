@@ -1,0 +1,59 @@
+baseURL = 'https://blog.acpt.com.au/'
+languageCode = 'en-au'
+title = 'AC Personal Training'
+theme = 'PaperMod'
+timeZone = 'Australia/Brisbane'
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  disableSpecial1stPost = true
+  description = "Strength training insights, fitness tips, and training philosophy from Aaron Curtis — a Brisbane-based personal trainer with over 20 years of experience."
+
+  [params.homeInfoParams]
+    Title = "AC Personal Training"
+    Content = "Strength, rehab, and real talk from the gym floor."
+
+  [[params.socialIcons]]
+    name = "instagram"
+    title = "Instagram"
+    url = "https://www.instagram.com/aaron.acpt"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    title = "LinkedIn"
+    url = "https://www.linkedin.com/in/aaron-curtis-56855a36a/"
+
+  [[params.socialIcons]]
+    name = "website"
+    title = "AC Personal Training"
+    url = "https://acpt.com.au"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+    weight = 20
+  [[menu.main]]
+    identifier = "main-site"
+    name = "acpt.com.au"
+    url = "https://acpt.com.au"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
